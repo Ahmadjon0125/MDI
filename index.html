@@ -1,0 +1,843 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- swiper -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <!-- tailwind -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- css -->
+    <link rel="stylesheet" href="./css/main.css" />
+    <title>MDI</title>
+  </head>
+  <body>
+    <header id="main-header" class="py-4 fixed w-full z-50">
+      <div class="container">
+        <div class="flex items-center">
+          <a href="/" class="">
+            <img
+              src="./img/logo.svg"
+              alt=""
+              class="w-[140px] lg:w-[210px] h-[71px]"
+            />
+          </a>
+          <nav class="hidden md:flex ml-auto flex">
+            <ul
+              class="headerList flex justify-between items-center sm:gap-[13px] lg:gap-[24px] xl:gap-[50px]"
+            >
+              <li><a href="#about">About Us</a></li>
+              <li><a href="#product">Products</a></li>
+              <li><a href="#service">Services</a></li>
+              <li><a href="#partner">Partners</a></li>
+              <li><a href="#contacts">Contacts</a></li>
+            </ul>
+            <a
+              class="openModal cursor-pointer ml-[10px] lg:ml-[30px] xl:ml-[50px] text-[16px] text-white bg-[#0AC2AC] hover:opacity-80 px-[20px] px-[15px] lg:px-[25px] xl:px-[33px] py-[10px] lg:py-[15px] rounded-[50px] font-[600]"
+              >Contact us</a
+            >
+          </nav>
+          <!-- Burger Button -->
+          <div class="burger" id="burger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Mobile Navigation -->
+      <div class="mobile-nav" id="mobileNav">
+        <div class="mobile-nav-content">
+          <ul class="navList flex md:hidden headerList">
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#product">Products</a></li>
+            <li><a href="#service">Services</a></li>
+            <li><a href="#partner">Partners</a></li>
+            <li><a href="#contacts">Contacts</a></li>
+          </ul>
+          <a
+            href=""
+            class="inline-block md:hidden text-[16px] text-white bg-[#0AC2AC] hover:opacity-80 px-[20px] px-[25px] xl:px-[33px] py-[15px] rounded-[50px] font-[600]"
+            >Contact us</a
+          >
+        </div>
+      </div>
+
+      <!-- Overlay -->
+      <div class="overlay" id="overlay"></div>
+    </header>
+
+    <main class="pt-[130px]">
+      <!-- 1-section -->
+      <section id="about" class="py-[20px] sm:pb-[40px] lg:pb-[60px] sm:pt-0">
+        <div class="container">
+          <div
+            class="flex flex-col sm:flex-row items-center justify-between sm:gap-[20px] py-[40px]"
+          >
+            <div class="max-w-[560px] w-full text-center sm:text-start mb-[30px]">
+              <h1
+                class="text-[#0AC2AC] font-[700] text-[30px] sm:text-[55px] lg:text-[80px] mb-[15px] sm:mb-[24px] lg:mb-[30px] leading-none"
+              >
+                Medical <span class="text-[#2B2E61]">equipment</span>
+              </h1>
+              <p
+                class="text-[#2B2E61] font-[400] text-[16px] mb-[15px] sm:mb-[30px] lg:mb-[42px]"
+              >
+                Nemo enim ipsam voluptatem, quia voluptas sit, aspernatur aut
+                odit aut fugit, sed quia consequuntur magni dolores eos
+              </p>
+              <a
+                class="openModal cursor-pointer text-[16px] text-white bg-[#0AC2AC] hover:opacity-80 px-[20px] px-[15px] lg:px-[25px] xl:px-[29px] py-[10px] lg:py-[20px] rounded-[50px] font-[600] mb-[15px]"
+                >Make a request</a
+              >
+            </div>
+             <div class="hexagon bg-[url(../img/heroBg.png)]"></div>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- 2-section -->
+      <section
+        id="product"
+        class="bg-[#F4F5F7] py-[25px] sm:py-[50px] lg:py-[83px]"
+      >
+        <div class="container">
+          <div>
+            <h2
+              class="text-center lg:text-start text-[#0AC2AC] font-[700] text-[25px] sm:text-[35px] lg:text-[50px] mb-[15px] sm:mb-[30px] lg:mb-[42px] leading-none"
+            >
+              Our <span class="text-[#2B2E61]">products</span>
+            </h2>
+            <div
+              class="flex flex-wrap lg:flex-nowrap justify-center gap-[20px] lg:gap-[29px]"
+            >
+              <a
+                class="openModal cursor-pointer group w-full max-w-[230px] sm:max-w-[250px] md:max-w-[300px] lg:max-w-[350px] xl:max-w-[420px] max-h-[310px] md:max-h-[422px] rounded-[20px] shadow-sm bg-white overflow-hidden"
+              >
+                <div
+                  class="h-[200px] group-hover:h-[150px] md:h-[280px] md:group-hover:h-[230px]"
+                >
+                  <img
+                    src="./img/product1.jpg"
+                    alt="Oftalmologik uskunalar"
+                    class="w-full h-full transition-all duration-300 ease object-cover"
+                  />
+                </div>
+
+                <div class="px-[10px] sm:px-[20px] lg:px-[30px] py-[25px]">
+                  <p
+                    class="text-[16px] font-[600] text-[#2B2E61] uppercase opacity-40"
+                  >
+                    OPHTHALMOLOGY
+                  </p>
+
+                  <h3
+                    class="my-[10px] text-[14px] md:text-[20px] xl:text-[24px] font-semibold uppercase text-[#2B2E61] group-hover:text-[#0AC2AC]"
+                  >
+                    OPHTHALMOLOGICAL <br />
+                    EQUIPMENT
+                  </h3>
+                  <div
+                    class="opacity-0 h-0 group-hover:opacity-100 flex group-hover:h-auto transition-all duration-300 ease"
+                  >
+                    <p class="mr-2 font-semibold text-[16px] text-[#2B2E61]">
+                      Make a request
+                    </p>
+                    <img src="./img/productIcon.svg" alt="" />
+                  </div>
+                </div>
+              </a>
+
+              <a
+                class="openModal cursor-pointer group w-full max-w-[230px] sm:max-w-[250px] md:max-w-[300px] lg:max-w-[350px] xl:max-w-[420px] max-h-[310px] md:max-h-[422px] rounded-[20px] shadow-sm bg-white overflow-hidden"
+              >
+                <div
+                  class="h-[200px] group-hover:h-[150px] md:h-[280px] md:group-hover:h-[230px]"
+                >
+                  <img
+                    src="./img/product1.jpg"
+                    alt="Oftalmologik uskunalar"
+                    class="w-full h-full transition-all duration-300 ease object-cover"
+                  />
+                </div>
+
+                <div class="px-[10px] sm:px-[20px] lg:px-[30px] py-[25px]">
+                  <p
+                    class="text-[16px] font-[600] text-[#2B2E61] uppercase opacity-40"
+                  >
+                    OPHTHALMOLOGY
+                  </p>
+
+                  <h3
+                    class="my-[10px] text-[14px] md:text-[20px] xl:text-[24px] font-semibold uppercase text-[#2B2E61] group-hover:text-[#0AC2AC]"
+                  >
+                    OPHTHALMOLOGICAL <br />
+                    EQUIPMENT
+                  </h3>
+                  <div
+                    class="opacity-0 h-0 group-hover:opacity-100 flex group-hover:h-auto transition-all duration-300 ease"
+                  >
+                    <p class="mr-2 font-semibold text-[16px] text-[#2B2E61]">
+                      Make a request
+                    </p>
+                    <img src="./img/productIcon.svg" alt="" />
+                  </div>
+                </div>
+              </a>
+
+              <a
+                class="openModal cursor-pointer group w-full max-w-[230px] sm:max-w-[250px] md:max-w-[300px] lg:max-w-[350px] xl:max-w-[420px] max-h-[310px] md:max-h-[422px] rounded-[20px] shadow-sm bg-white overflow-hidden"
+              >
+                <div
+                  class="h-[200px] group-hover:h-[150px] md:h-[280px] md:group-hover:h-[230px]"
+                >
+                  <img
+                    src="./img/product1.jpg"
+                    alt="Oftalmologik uskunalar"
+                    class="w-full h-full transition-all duration-300 ease object-cover"
+                  />
+                </div>
+
+                <div class="px-[10px] sm:px-[20px] lg:px-[30px] py-[25px]">
+                  <p
+                    class="text-[16px] font-[600] text-[#2B2E61] uppercase opacity-40"
+                  >
+                    OPHTHALMOLOGY
+                  </p>
+
+                  <h3
+                    class="my-[10px] text-[14px] md:text-[20px] xl:text-[24px] font-semibold uppercase text-[#2B2E61] group-hover:text-[#0AC2AC]"
+                  >
+                    OPHTHALMOLOGICAL <br />
+                    EQUIPMENT
+                  </h3>
+                  <div
+                    class="opacity-0 h-0 group-hover:opacity-100 flex group-hover:h-auto transition-all duration-300 ease"
+                  >
+                    <p class="mr-2 font-semibold text-[16px] text-[#2B2E61]">
+                      Make a request
+                    </p>
+                    <img src="./img/productIcon.svg" alt="" />
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 3-section -->
+      <section id="service" class="py-[100px]">
+        <div class="container">
+          <h2
+            class="text-center lg:text-start text-[#0AC2AC] font-[700] text-[25px] sm:text-[35px] lg:text-[50px] mb-[15px] sm:mb-[30px] lg:mb-[42px] leading-none"
+          >
+            Our <span class="text-[#2B2E61]">services</span>
+          </h2>
+
+          <div
+            class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8"
+          >
+            <div
+              class="openModal cursor-pointer bg-white hover:bg-[#0AC2AC] rounded-xl shadow-lg p-6 lg:p-8 transition duration-300 hover:shadow-xl group"
+            >
+              <p
+                class="text-sm font-semibold text-[#2B2E61] opacity-40 group-hover:text-white uppercase tracking-widest mb-2"
+              >
+                DELIVERY
+              </p>
+              <h3
+                class="text-xl lg:text-2xl font-bold text-[#2B2E61] group-hover:text-white leading-snug mb-12"
+              >
+                Delivery, installation and personnel training
+              </h3>
+              <div
+                class="flex items-center justify-end text-[#0AC2AC] font-semibold text-base group cursor-pointer"
+              >
+                <span class="mr-2 group-hover:text-white">Make a request</span>
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <rect
+                    width="24"
+                    height="24"
+                    rx="12"
+                    fill=""
+                    class="fill-[#0AC2AC] group-hover:fill-white"
+                  />
+                  <path
+                    d="M15.8994 8.75732L8.82835 15.8284"
+                    stroke=""
+                    class="stroke-white group-hover:stroke-[#0AC2AC]"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M10.2429 8.75714L15.8997 8.75714L15.8997 14.414"
+                    stroke=""
+                    class="stroke-white group-hover:stroke-[#0AC2AC]"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </div>
+            </div>
+
+            <div
+              class="openModal cursor-pointer bg-white hover:bg-[#0AC2AC] rounded-xl shadow-lg p-6 lg:p-8 transition duration-300 hover:shadow-xl group"
+            >
+              <p
+                class="text-sm font-semibold text-[#2B2E61] opacity-40 group-hover:text-white uppercase tracking-widest mb-2"
+              >
+                DELIVERY
+              </p>
+              <h3
+                class="text-xl lg:text-2xl font-bold text-[#2B2E61] group-hover:text-white leading-snug mb-12"
+              >
+                Delivery, installation and personnel training
+              </h3>
+              <div
+                class="flex items-center justify-end text-[#0AC2AC] font-semibold text-base group cursor-pointer"
+              >
+                <span class="mr-2 group-hover:text-white">Make a request</span>
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <rect
+                    width="24"
+                    height="24"
+                    rx="12"
+                    fill=""
+                    class="fill-[#0AC2AC] group-hover:fill-white"
+                  />
+                  <path
+                    d="M15.8994 8.75732L8.82835 15.8284"
+                    stroke=""
+                    class="stroke-white group-hover:stroke-[#0AC2AC]"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M10.2429 8.75714L15.8997 8.75714L15.8997 14.414"
+                    stroke=""
+                    class="stroke-white group-hover:stroke-[#0AC2AC]"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </div>
+            </div>
+
+            <div
+              class="openModal cursor-pointer bg-white hover:bg-[#0AC2AC] rounded-xl shadow-lg p-6 lg:p-8 transition duration-300 hover:shadow-xl group"
+            >
+              <p
+                class="text-sm font-semibold text-[#2B2E61] opacity-40 group-hover:text-white uppercase tracking-widest mb-2"
+              >
+                DELIVERY
+              </p>
+              <h3
+                class="text-xl lg:text-2xl font-bold text-[#2B2E61] group-hover:text-white leading-snug mb-12"
+              >
+                Delivery, installation and personnel training
+              </h3>
+              <div
+                class="flex items-center justify-end text-[#0AC2AC] font-semibold text-base group cursor-pointer"
+              >
+                <span class="mr-2 group-hover:text-white">Make a request</span>
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <rect
+                    width="24"
+                    height="24"
+                    rx="12"
+                    fill=""
+                    class="fill-[#0AC2AC] group-hover:fill-white"
+                  />
+                  <path
+                    d="M15.8994 8.75732L8.82835 15.8284"
+                    stroke=""
+                    class="stroke-white group-hover:stroke-[#0AC2AC]"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M10.2429 8.75714L15.8997 8.75714L15.8997 14.414"
+                    stroke=""
+                    class="stroke-white group-hover:stroke-[#0AC2AC]"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </div>
+            </div>
+
+            <div
+              class="openModal cursor-pointer bg-white hover:bg-[#0AC2AC] rounded-xl shadow-lg p-6 lg:p-8 transition duration-300 hover:shadow-xl group"
+            >
+              <p
+                class="text-sm font-semibold text-[#2B2E61] opacity-40 group-hover:text-white uppercase tracking-widest mb-2"
+              >
+                DELIVERY
+              </p>
+              <h3
+                class="text-xl lg:text-2xl font-bold text-[#2B2E61] group-hover:text-white leading-snug mb-12"
+              >
+                Delivery, installation and personnel training
+              </h3>
+              <div
+                class="flex items-center justify-end text-[#0AC2AC] font-semibold text-base group cursor-pointer"
+              >
+                <span class="mr-2 group-hover:text-white">Make a request</span>
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <rect
+                    width="24"
+                    height="24"
+                    rx="12"
+                    fill=""
+                    class="fill-[#0AC2AC] group-hover:fill-white"
+                  />
+                  <path
+                    d="M15.8994 8.75732L8.82835 15.8284"
+                    stroke=""
+                    class="stroke-white group-hover:stroke-[#0AC2AC]"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M10.2429 8.75714L15.8997 8.75714L15.8997 14.414"
+                    stroke=""
+                    class="stroke-white group-hover:stroke-[#0AC2AC]"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </div>
+            </div>
+
+            <div
+              class="openModal cursor-pointer bg-white hover:bg-[#0AC2AC] rounded-xl shadow-lg p-6 lg:p-8 transition duration-300 hover:shadow-xl group"
+            >
+              <p
+                class="text-sm font-semibold text-[#2B2E61] opacity-40 group-hover:text-white uppercase tracking-widest mb-2"
+              >
+                DELIVERY
+              </p>
+              <h3
+                class="text-xl lg:text-2xl font-bold text-[#2B2E61] group-hover:text-white leading-snug mb-12"
+              >
+                Delivery, installation and personnel training
+              </h3>
+              <div
+                class="flex items-center justify-end text-[#0AC2AC] font-semibold text-base group cursor-pointer"
+              >
+                <span class="mr-2 group-hover:text-white">Make a request</span>
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <rect
+                    width="24"
+                    height="24"
+                    rx="12"
+                    fill=""
+                    class="fill-[#0AC2AC] group-hover:fill-white"
+                  />
+                  <path
+                    d="M15.8994 8.75732L8.82835 15.8284"
+                    stroke=""
+                    class="stroke-white group-hover:stroke-[#0AC2AC]"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M10.2429 8.75714L15.8997 8.75714L15.8997 14.414"
+                    stroke=""
+                    class="stroke-white group-hover:stroke-[#0AC2AC]"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </div>
+            </div>
+
+            <!-- <div class="hidden lg:block"></div> -->
+          </div>
+        </div>
+      </section>
+
+      <!-- 4-section -->
+      <section id="partner" class="bg-[#F4F5F7] py-[40px]">
+        <div class="container">
+          <div class="grid grid-cols-1 md:grid-cols-2 items-center">
+            <h2
+              class="text-[#2B2E61] text-[25px] sm:text-[35px] lg:text-[50px] font-[700] md:max-w-[480px] leading-none mb-5 text-center md:text-start"
+            >
+              General Partner <br />
+              <span class="text-[#0AC2AC]">in Uzbekistan</span>
+            </h2>
+            <div
+              class="bg-[#0AC2AC] px-[25px] md:px-[50px] py-[40px] md:py-[80px] rounded-[20px]"
+            >
+              <div class="text-center">
+                <img src="./img/partner.svg" alt="" class="mx-auto mb-4" />
+                <h3 class="uppercase text-white font-[500] text-[16px]">
+                  Address
+                </h3>
+                <p class="text-white font-[600] text-[16px] md:text-[20px]">
+                  Tashkent, Yunusabad district, st. Okil Ota, 15
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- 5-section -->
+      <section class="py-20">
+        <div class="container">
+          <div>
+            <h2
+              class="text-center lg:text-start text-[#0AC2AC] font-[700] text-[25px] sm:text-[35px] lg:text-[50px] mb-[15px] sm:mb-[30px] lg:mb-[42px] leading-none"
+            >
+              Our <span class="text-[#2B2E61]">partners</span>
+            </h2>
+            <!-- Swiper -->
+            <div class="swiper mySwiper">
+              <div class="swiper-wrapper mb-10">
+                <div class="swiper-slide">
+                  <img
+                    src="./img/partner1.png"
+                    width="180px"
+                    height="90px"
+                    alt=""
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    src="./img/partner2.png"
+                    width="180px"
+                    height="90px"
+                    alt=""
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    src="./img/partner3.png"
+                    width="180px"
+                    height="90px"
+                    alt=""
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    src="./img/partner4.png"
+                    width="180px"
+                    height="90px"
+                    alt=""
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    src="./img/partner5.png"
+                    width="180px"
+                    height="90px"
+                    alt=""
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    src="./img/partner6.png"
+                    width="180px"
+                    height="90px"
+                    alt=""
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    src="./img/partner3.png"
+                    width="180px"
+                    height="90px"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <div class="swiper-pagination pag mt-10"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 6-section -->
+      <section
+        id="contacts"
+        class="bg-[#0AC2AC] py-[35px] md:py-[50px] lg:py-[85px]"
+      >
+        <div class="container">
+          <div class="mx-auto px-4">
+            <div
+              class="grid grid-cols-1 md:grid-cols-2 gap-12 lg:gap-24 items-center md:items-start"
+            >
+              <div class="text-center md:text-start">
+                <h2
+                  class="text-[25px] md:text-[35px] lg:text-[50px] font-[700] text-white mb-[10px] md:mb-[24px]"
+                >
+                  Contacts
+                </h2>
+
+                <div class="space-y-6">
+                  <div>
+                    <p
+                      class="text-[16px] font-[600] uppercase text-white opacity-70 mb-1"
+                    >
+                      ADDRESS:
+                    </p>
+                    <p class="text-[18px] font-[500] text-white">
+                      17a Temur Malik St., Tashkent city, Uzbekistan
+                    </p>
+                  </div>
+                  <div>
+                    <p
+                      class="text-[16px] font-[600] uppercase text-white opacity-70 mb-1"
+                    >
+                      LANDMARKS:
+                    </p>
+                    <p class="text-[18px] font-[500] text-white">
+                      Chimgan Crossing, Eko Bazar, Khan Atlas Cafe
+                    </p>
+                  </div>
+                  <div>
+                    <p
+                      class="text-[16px] font-[600] uppercase text-white opacity-70 mb-1"
+                    >
+                      PHONE NUMBER:
+                    </p>
+                    <p class="text-[18px] font-[500] text-white">
+                      +998 93 505 45 05
+                    </p>
+                  </div>
+                  <div>
+                    <p
+                      class="text-[16px] font-[600] uppercase text-white opacity-70 mb-1"
+                    >
+                      EMAIL:
+                    </p>
+                    <p class="text-[18px] font-[500] text-white">info@sos.uz</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="text-center md:text-start">
+                <h2
+                  class="text-[25px] md:text-[35px] lg:text-[50px] font-[700] text-white mb-[10px] md:mb-[22px]"
+                >
+                  Make a request
+                </h2>
+
+                <form class="space-y-6">
+                  <div>
+                    <input
+                      type="tel"
+                      placeholder="Phone number"
+                      class="w-full p-4 rounded-[20px] outline-none bg-opacity-10 border border-white border-opacity-30 text-white placeholder-white placeholder-opacity-70 transition duration-200"
+                    />
+                  </div>
+                  <div>
+                    <input
+                      type="email"
+                      placeholder="Email"
+                      class="w-full p-4 rounded-[20px] outline-none bg-opacity-10 border border-white border-opacity-30 text-white placeholder-white placeholder-opacity-70 transition duration-200"
+                    />
+                  </div>
+                  <div>
+                    <textarea
+                      rows="5"
+                      placeholder="Comment"
+                      class="w-full p-4 rounded-[20px] outline-none bg-opacity-10 border border-white border-opacity-30 text-white placeholder-white placeholder-opacity-70 transition duration-200 resize-y"
+                    ></textarea>
+                  </div>
+
+                  <div class="text-right">
+                    <button
+                      type="submit"
+                      class="inline-block px-8 py-4 bg-white text-[#0AC2AC] font-bold text-lg rounded-[50px] hover:opacity-90 transition duration-200 shadow-md"
+                    >
+                      Send
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- footer  -->
+    <footer class="py-10 md:py-15">
+      <div class="container">
+        <div
+          class="flex flex-col md:flex-row items-center justify-between gap-2 lg:gap-8"
+        >
+          <div class="flex items-center gap-[50px] flex-col md:flex-row">
+            <div class="flex flex-col items-center md:items-start">
+              <a href="/" class="">
+                <img src="./img/logo.svg" width="260px" height="87px" alt="" />
+              </a>
+            </div>
+
+            <div class="flex space-x-5 items-center justify-start">
+              <a
+                href="#"
+                class="group w-[34px] h-[34px] rounded-full flex items-center justify-center transition duration-200"
+              >
+                <svg
+                  width="34"
+                  height="34"
+                  viewBox="0 0 34 34"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <rect
+                    opacity="0.3"
+                    width="34"
+                    height="34"
+                    rx="17"
+                    class="fill-[#2B2E61] opacity-30 group-hover:opacity-100 group-hover:fill-[#0AC2AC]"
+                  />
+                  <path
+                    d="M16.9633 9.34961C17.9811 9.38596 19.0353 9.38596 20.0531 9.42231C20.9619 9.45866 21.798 9.60407 22.5978 10.0766C23.6156 10.6946 24.2336 11.6034 24.4517 12.7667C24.5608 13.4573 24.5971 14.1844 24.6335 14.8751C24.6698 16.4018 24.6335 17.9286 24.6335 19.4554C24.6335 20.2551 24.5971 21.0548 24.3426 21.8182C23.8337 23.3086 22.7795 24.2174 21.2528 24.5082C20.5621 24.6537 19.835 24.6537 19.1444 24.69C17.6176 24.7264 16.1272 24.69 14.6004 24.69C13.8007 24.69 13.0009 24.6537 12.2375 24.3992C10.7471 23.8903 9.83834 22.8361 9.54752 21.3093C9.40212 20.6186 9.40212 19.8916 9.36577 19.2009C9.32941 17.6741 9.36577 16.1474 9.36577 14.6206C9.36577 13.8209 9.40212 13.0211 9.65658 12.2577C10.1655 10.7673 11.2197 9.85853 12.7465 9.56772C13.4371 9.42231 14.1642 9.42231 14.8549 9.38596C15.5092 9.34961 16.2362 9.34961 16.9633 9.34961ZM23.2521 16.8744C23.2157 16.8744 23.2521 16.8744 23.2521 16.8744C23.2157 16.2564 23.2157 15.6748 23.2157 15.0568C23.2157 14.4752 23.1794 13.8936 23.1067 13.3119C22.9613 12.0033 22.1979 11.1308 20.9256 10.8764C20.2713 10.731 19.5442 10.731 18.8899 10.731C17.5812 10.6946 16.3089 10.6946 15.0003 10.731C14.3459 10.731 13.6916 10.7673 13.0736 10.8764C11.9831 11.0581 11.2197 11.6761 10.8925 12.7667C10.7835 13.1302 10.7471 13.4937 10.7108 13.8572C10.6744 15.2386 10.6744 16.6199 10.6744 18.0013C10.6744 18.8737 10.7108 19.7825 10.7835 20.655C10.8925 21.9636 11.6923 22.8724 13.0009 23.0905C13.6553 23.1996 14.3459 23.2359 15.0366 23.2359C16.3089 23.2723 17.5812 23.2359 18.8899 23.2359C19.4715 23.2359 20.0531 23.1996 20.6348 23.1269C21.18 23.0905 21.689 22.9088 22.1252 22.5453C22.8522 21.9636 23.1067 21.2002 23.143 20.3278C23.2157 19.2373 23.2157 18.0377 23.2521 16.8744Z"
+                    fill="white"
+                  />
+                  <path
+                    d="M20.8891 17.0202C20.8891 19.2013 19.1442 20.9462 16.9631 20.9462C14.782 20.9462 13.0371 19.2013 13.0371 16.9839C13.0371 14.8391 14.8183 13.0942 16.9994 13.0942C19.1442 13.0942 20.8891 14.8391 20.8891 17.0202ZM16.9267 19.5648C18.3081 19.5648 19.4713 18.4016 19.4713 17.0202C19.4713 15.6389 18.3081 14.4756 16.9267 14.4756C15.509 14.4756 14.3821 15.6389 14.3821 17.0202C14.3821 18.4016 15.5454 19.5648 16.9267 19.5648Z"
+                    fill="white"
+                  />
+                  <path
+                    d="M21.9437 12.9117C21.9437 13.4206 21.5439 13.8569 21.0349 13.8569C20.526 13.8569 20.0898 13.4206 20.1261 12.9117C20.1261 12.4028 20.526 12.0029 21.0349 12.0029C21.5439 12.0029 21.9437 12.4028 21.9437 12.9117Z"
+                    fill="white"
+                  />
+                </svg>
+              </a>
+              <a
+                href="#"
+                class="group w-[34px] h-[34px] rounded-full flex items-center justify-center transition duration-200"
+              >
+                <svg
+                  width="34"
+                  height="34"
+                  viewBox="0 0 34 34"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <rect
+                    width="34"
+                    height="34"
+                    rx="17"
+                    class="fill-[#2B2E61] opacity-30 group-hover:opacity-100 group-hover:fill-[#0AC2AC]"
+                  />
+                  <path
+                    d="M20.6774 17.0002H18.4607V24.9336H15.1552V17.0002H13.5996V14.2002H15.1552V12.3724C15.1552 11.0891 15.7774 9.06689 18.4607 9.06689H20.9107V11.7891H19.1607C18.8885 11.7891 18.4607 11.9447 18.4607 12.5669V14.2002H20.9496L20.6774 17.0002Z"
+                    fill="white"
+                  />
+                </svg>
+              </a>
+              <a
+                href="#"
+                class="group w-[34px] h-[34px] rounded-full flex items-center justify-center transition duration-200"
+              >
+                <svg
+                  width="34"
+                  height="34"
+                  viewBox="0 0 34 34"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <rect
+                    opacity="0.3"
+                    width="34"
+                    height="34"
+                    rx="17"
+                    class="fill-[#2B2E61] opacity-30 group-hover:opacity-100 group-hover:fill-[#0AC2AC]"
+                  />
+                  <path
+                    d="M24.6496 11.013C24.6081 11.3864 24.5251 11.8013 24.4422 12.1747C23.7369 15.4937 23.0316 18.8128 22.3263 22.1319C22.2848 22.3394 22.2433 22.5053 22.1603 22.6713C21.9943 22.9617 21.7454 23.0447 21.4135 22.9617C21.2061 22.9202 21.0401 22.8372 20.8742 22.7127C19.7955 21.9245 18.7582 21.1362 17.6795 20.3479C17.5551 20.2649 17.4721 20.2649 17.3476 20.3894C16.8083 20.8873 16.3104 21.4266 15.7711 21.9245C15.5636 22.1319 15.3562 22.2564 15.0658 22.2149C14.8583 22.2149 14.7339 22.1319 14.6924 21.9245C14.3605 20.8873 14.0285 19.8915 13.6966 18.8543C13.5722 18.5224 13.4477 18.149 13.3647 17.8171C13.3232 17.6926 13.2818 17.6097 13.1158 17.5682C12.0786 17.2363 11.0414 16.9044 10.0042 16.6139C9.8797 16.5724 9.71374 16.531 9.58928 16.448C9.29886 16.282 9.25737 16.0331 9.54779 15.7842C9.71374 15.6182 9.92118 15.5352 10.1701 15.4523C11.5807 14.9129 12.9913 14.3736 14.4019 13.8342C17.4721 12.6725 20.5008 11.4694 23.5709 10.3077C23.6124 10.3077 23.6124 10.3077 23.6539 10.2662C24.2347 10.0588 24.6496 10.3492 24.6496 11.013ZM15.1073 21.2606C15.1487 21.2192 15.1487 21.1777 15.1487 21.1777C15.2317 20.4309 15.2732 19.6841 15.3562 18.9373C15.3562 18.7713 15.4392 18.6054 15.5636 18.4809C17.5551 16.6969 19.5465 14.9129 21.538 13.1289C21.6624 13.0044 21.7869 12.9215 21.9114 12.797C21.9529 12.7555 22.0358 12.714 21.9943 12.631C21.9529 12.5481 21.8699 12.5481 21.7869 12.5481C21.6209 12.5481 21.4965 12.631 21.372 12.714C18.9242 14.2491 16.4764 15.7842 14.0285 17.3607C13.9041 17.4437 13.8626 17.5267 13.9041 17.6926C14.1945 18.6054 14.4849 19.5181 14.8168 20.4309C14.8998 20.6383 14.9828 20.9287 15.1073 21.2606Z"
+                    fill="white"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+
+          <div
+            class="flex flex-col items-center md:items-end text-center md:text-right text-[14px] space-y-2 lg:space-y-5 mt-4 md:mt-0"
+          >
+            <p class="text-[#2B2E61] opacity-60">«MDI» All rights reserved</p>
+            <p class="text-[#2B2E61] opacity-60">
+              © Copyright 2025 - Web developed by SOS Group
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Modal fon -->
+    <!-- Modal (bitta) -->
+    <div class="modalOverlay" id="modalOverlay">
+      <div class="modalBox">
+        <h2
+          class="text-center lg:text-start text-[#0AC2AC] font-[700] text-[25px] sm:text-[35px] lg:text-[50px] mb-[15px] sm:mb-[30px] lg:mb-[42px] leading-none"
+        >
+          Make a <span class="text-[#2B2E61]">request</span>
+        </h2>
+
+        <form class="modalForm">
+          <input type="text" placeholder="Phone number" />
+          <input type="email" placeholder="Email" />
+          <textarea placeholder="Comment"></textarea>
+
+          <button type="submit" class="sendBtn">Send</button>
+        </form>
+      </div>
+    </div>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- js -->
+    <script src="./js/main.js"></script>
+  </body>
+</html>
