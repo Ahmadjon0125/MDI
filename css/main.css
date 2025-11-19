@@ -171,15 +171,7 @@ body {
   animation: scaleIn 0.3s ease;
 }
 
-/* .modalBox h2 {
-  font-size: 32px;
-  margin-bottom: 25px;
-  font-weight: 700;
-}
 
-.modalBox h2 span {
-  color: #00a7a7;
-} */
 
 /* Forma */
 .modalForm input,
@@ -247,73 +239,4 @@ body {
 .modalForm ::placeholder {
   color: #2b2e61;
 }
-
-/* hexagon */
-/* 
-.hex {
-  width: 600px;
-  height: 520px;
-  clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
-  overflow: hidden;
-  border-radius: 30px;
-  
-}
-
-.hex img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-} */
-
-/* .hex {
-  width: 600px;
-  height: 520px;
-  clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
-  overflow: hidden;
-}
-
-.inner {
-  width: 100%;
-  height: 100%;
-  background-image: url('your-image.jpg');
-  background-size: cover;
-  background-position: center;
-  border-radius: 130px; /* ➜ ICHKI QISMGA radius BERILDI */
-/* } */ 
-
-.hexagon {
-  width: 80vw;           /* kenglik ekran kengligiga moslashadi */
-  max-width: 600px;      /* maksimal kenglik */
-  aspect-ratio: 6 / 5.2; /* height / width = 520/600 ≈ 5.2/6 */
-  
-  /* Rasm */
- 
-  background-size: cover;
-  background-position: center;
-
-  /* Hexagon shakli */
-  -webkit-clip-path: polygon(
-    25% 0%, 
-    75% 0%, 
-    100% 50%, 
-    75% 100%, 
-    25% 100%, 
-    0% 50%
-  );
-  clip-path: polygon(
-    25% 0%, 
-    75% 0%, 
-    100% 50%, 
-    75% 100%, 
-    25% 100%, 
-    0% 50%
-  );
-
-  /* ➜ YUMALOQLIK berish */
-  mask: 
-    radial-gradient(circle 100%, #000 100%, transparent 100%) 
-      0 0 / 33.3% 50% repeat;
-}
-
-
 
