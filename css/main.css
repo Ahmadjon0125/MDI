@@ -136,16 +136,15 @@ body {
   }
 }
 
-.pag {
-  left: -35px !important;
-  transform: translateX(0%) !important;
-  text-align: left !important;
-  margin-top: 40px !important;
-}
+
 
 .mySwiper .swiper-wrapper {
   transition-timing-function: linear !important;
   padding-bottom: 40px;
+}
+
+.swiper-pagination-bullet-active {
+background-color: #0AC2AC;
 }
 
 /* modal  */

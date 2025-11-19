@@ -32,50 +32,35 @@ mobileNavLinks.forEach((link) => {
 
 
 // swiper
-
 var swiper = new Swiper(".mySwiper", {
-      // Slaydlar orasidagi masofa (masofani ham belgilash tavsiya etiladi)
-      spaceBetween: 30, 
-      loop: "true",
+  spaceBetween: 30,
+  slidesPerView: 3,
+  freeMode: true,
+  freeModeSticky: true,
+  loop: false,
 
-      pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-      },
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+    renderBullet: function (index, className) {
+      // har doim 3 ta dot yaratamiz
+      const dotIndex = index % 3; // modulo 3
+      return '<span class="' + className + '"></span>';
+    },
+  },
 
-      // Avtomatik aylanish sozlamalari
-      autoplay: {
-        delay: 0, // Har bir slaydning pauza vaqti 0ms
-        // disableOnInteraction: false, // Foydalanuvchi tugmani bossa ham to'xtamaydi
-      },
+  breakpoints: {
+    320: { slidesPerView: 2, spaceBetween: 20 },
+    768: { slidesPerView: 4, spaceBetween: 30 },
+    1024: { slidesPerView: 5, spaceBetween: 30 },
+    1280: { slidesPerView: 6, spaceBetween: 40 },
+  },
+});
 
-      // Slayd tezligi (avtomatik aylanadigan slayderlar uchun muhim)
-      speed: 10000, // Misol uchun, 4000ms (4 soniya) da bitta to'liq aylanish
-      
-      // Responsive sozlamalar (Har xil ekran o'lchamlari uchun)
-      breakpoints: {
-        // 320px dan boshlab (Mobile)
-        320: {
-          slidesPerView: 2, // Bir vaqtda 2 ta logotip
-          spaceBetween: 20
-        },
-        // 768px dan boshlab (Tablet)
-        768: {
-          slidesPerView: 4, // Bir vaqtda 4 ta logotip
-          spaceBetween: 30
-        },
-        // 1024px dan boshlab (Laptop/Kattaroq ekran)
-        1024: {
-          slidesPerView: 5, // Bir vaqtda 5 ta logotip (Siz so'raganingiz)
-          spaceBetween: 30
-        },
-        // Agar juda katta ekran bo'lsa, 6 ta ko'rsatishi mumkin
-        1280: {
-          slidesPerView: 6, 
-          spaceBetween: 40
-        }
-      }
-    });
+
+
+
+
 
 
     // modal 
