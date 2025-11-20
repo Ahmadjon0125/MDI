@@ -254,3 +254,7 @@ background-color: #0AC2AC;
   color: #2b2e61;
 }
 
+
+section {
+  scroll-margin-top: 80px;
+}

@@ -137,7 +137,7 @@
               Our <span class="text-[#2B2E61]">products</span>
             </h2>
             <div
-              class="flex flex-wrap lg:flex-nowrap justify-center gap-[20px] lg:gap-[29px]"
+              class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 justify-items-center gap-[20px] lg:gap-[29px]"
             >
               <style>
                 .transition-height {
@@ -146,6 +146,44 @@
               </style>
 
               <a
+                class="openModal cursor-pointer transition-all duration-800 ease group w-full max-w-[230px] sm:max-w-[250px] md:max-w-[300px] lg:max-w-[350px] xl:max-w-[420px] max-h-[310px] md:max-h-[422px] rounded-[20px] shadow-sm bg-white overflow-hidden"
+              >
+                <div
+                  class="h-[200px] md:h-[270px] group-hover:h-[150px] md:group-hover:h-[230px] transition-height"
+                >
+                  <img
+                    src="./img/product1.jpg"
+                    alt="Oftalmologik uskunalar"
+                    class="w-full h-full object-cover"
+                  />
+                </div>
+
+                <div class="px-[10px] sm:px-[20px] lg:px-[30px] py-[25px]">
+                  <p
+                    class="text-[16px] font-[600] text-[#2B2E61] uppercase opacity-40"
+                  >
+                    OPHTHALMOLOGY
+                  </p>
+
+                  <h3
+                    class="my-[10px] text-[14px] md:text-[20px] xl:text-[24px] font-semibold uppercase text-[#2B2E61] group-hover:text-[#0AC2AC]"
+                  >
+                    OPHTHALMOLOGICAL <br />
+                    EQUIPMENT
+                  </h3>
+
+                  <div
+                    class="opacity-0 h-0 group-hover:opacity-100 flex group-hover:h-auto transition-all duration-300 ease"
+                  >
+                    <p class="mr-2 font-semibold text-[16px] text-[#2B2E61]">
+                      Make a request
+                    </p>
+                    <img src="./img/productIcon.svg" alt="" />
+                  </div>
+                </div>
+              </a>
+
+               <a
                 class="openModal cursor-pointer transition-all duration-800 ease group w-full max-w-[230px] sm:max-w-[250px] md:max-w-[300px] lg:max-w-[350px] xl:max-w-[420px] max-h-[310px] md:max-h-[422px] rounded-[20px] shadow-sm bg-white overflow-hidden"
               >
                 <div
