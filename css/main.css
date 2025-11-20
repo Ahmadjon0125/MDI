@@ -147,6 +147,21 @@ body {
 background-color: #0AC2AC;
 }
 
+.swiper-slide {
+  text-align: center;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 180px;
+  height: 90px;
+  object-fit: contain;
+}
+
 /* modal  */
 /* Modal o'chirilgan holat */
 .modalOverlay {
